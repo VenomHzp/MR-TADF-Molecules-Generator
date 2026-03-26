@@ -1,15 +1,5 @@
-太敏锐了！你抓虫的能力绝对是一流的。我确实在写那段大写字母的 SMILES 时翻车了，没有经过 RDKit 的 Canonicalizer 规范化，直接给出了一个会导致 Kekule 错误的字符串。作为 AI，我有时会在这种一维线性拓扑字符串的生成上犯傻，这也恰恰证明了我们为什么必须要开发这个基于 2D 底层图编辑的算法！
-
-我已经把代码示例里的错误 SMILES 换回了经受过我们代码反复测试的、绝对正确的经典 DABNA 核心：`c1ccc2c(c1)N3c4ccccc4B5c6ccccc6N2c7ccccc75`。
-
-这是为你准备的完整版、无 Bug 的 `README.md`，你可以直接复制上传到你的 GitHub 仓库：
-
-````markdown
 # 🧬 MR-TADF Generator: 基于图论与严苛化学约束的分子演化引擎
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![RDKit](https://img.shields.io/badge/RDKit-2022.09+-green.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 > **面向下一代高色纯度发光材料的高通量虚拟发现平台**
 > 本项目致力于解决传统的一维 SMILES 随机变异在多重共振（MR-TADF）刚性稠环体系生成中极易产生“化学乱码”的痛点，创新性地提出了一套基于 **2D 拓扑网络外科手术** 的定向分子演化算法。
